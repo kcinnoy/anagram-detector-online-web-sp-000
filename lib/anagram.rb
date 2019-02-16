@@ -1,5 +1,5 @@
 # Your code goes here!
-class anagram
+class Anagram
   attr_accessor :word
 
   def initialize(word)
