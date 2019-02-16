@@ -1,6 +1,6 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :word
+  attr_reader :word
 
   def initialize(word)
     @word = word
@@ -8,7 +8,7 @@ class Anagram
 
   def match(arr)
     arr.select do |string|
-      string.split.("").sort == word.split("").sort
+      string.split("").sort == word.split("").sort
     end
   end
 
